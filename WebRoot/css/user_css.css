@@ -1,0 +1,366 @@
+.cont{
+	width:898px;
+	height:400px;
+	background-color:white;
+	border: 1px solid silver;
+	
+}
+.logout{
+	width:898px;
+	height:400px;
+	border: 1px solid silver;
+	background-color: white;
+}
+.logout table{
+	width:900px;
+	height:400px;
+	/*border-style:dotted;*/
+}
+.logout table td{
+	/*background-color: pink;*/
+}
+.user_logout{
+	width:898px;
+	height:400px;
+	background-color:pink;
+	border: 1px solid silver;
+	float: left;
+}
+/*付款*/
+.pay{
+	width:898px;
+	height:430px;
+	border: 1px solid silver;
+	background-color: white;
+}
+.pay_left{
+	width:600px;
+	border-right: 1px solid silver;
+	height: 400px;
+	float: left;
+}
+.pay_right{
+	width:296px;
+	height: 400px;
+	float: left;
+}
+.pay_left_order{
+	width:600px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	float: left;
+	background-color:#92E587;
+	margin-top: 2px;
+}
+.pay_left_table{
+	width:500px;
+	height:300px;
+	margin-left:50px;
+	margin-top:60px;
+	/*background-color: pink;*/
+	border: 1px solid silver;
+}
+.pay_left_table table{
+	width:500px;
+	height: 100px;
+	margin-top:70px;	
+}
+.pay_left_table table td{
+	font-size: 20px;
+}
+/*用户登录的css*/
+.login{
+	width:400px;
+	height:300px;
+	/*background-color: red;*/
+	float: right;
+	/*margin-left: 400px;*/
+}
+.login table{
+	width:300px;
+	height:300px;
+	/*background-color: blue;*/	
+	margin-left: 90px;
+	border: 1px solid silver;
+
+}
+.login table td{
+	background-color:pink;
+	
+	
+}
+#checkCode{
+	width:80px;
+	height:24px;
+	/*background-color: red;*/
+	margin-top: 0px;
+	display: block;
+	float: left;
+}
+.checkCodeimg{
+	/*margin-top: 30px;*/
+	width:60px;
+	height:30px;
+	background-color: black;
+	display: block;
+	float: left;
+	margin-left:5px;
+	
+}
+/*注册界面的验证码的样式*/
+.checkCodeimg1{
+	width:60px;
+	height:30px;
+	display: block;
+	float: right;
+	margin-right: 148px;
+	/*margin-top: 2px;*/
+}
+/*showDetail页面中间的部分*/
+.showDetail{
+	width:897px;
+	height:480px;
+	border:1px solid silver;
+	margin-top: 2px;
+	background-color: white;
+}
+/*左边的大div*/
+.flower_pic{
+	width:400px;
+	height:450px;
+	float: left;
+	border:1px solid silver;
+	margin-top:10px;
+	margin-left: 60px;
+	text-align: center;
+	background-color: white;
+}
+.watch{
+	width:400px;
+	height:40px;
+	margin-top: 40px;
+	/*background-color: pink;*/
+}
+.watch span{
+	line-height: 40px;
+	font-size: 20px;
+	margin-left: 30px;
+}
+.flower_pic img{
+	margin-top: 30px;
+}
+.flower_detail{
+	width:393px;
+	height:450px;
+	border:1px solid silver;
+	margin-left: 20px;
+	float: left;
+	margin-top:10px;
+	margin-bottom: 10px;
+	background-color: white;
+}
+.flower_name{
+	width:392px;
+	height:40px;
+	/*background-color: red;*/
+	float:left;
+	margin-top:30px;
+	border: 1px solid silver;
+}
+.flower_name span,.flower_price span,.flower_intro span,.flower_marketprice span,.flower_startsale span,.flower_nums span{
+	line-height: 40px;
+	/*background-color: red;*/
+	display: block;/*转为块元素*/
+	font-size:18px;
+}
+.flower_price,.flower_marketprice,.flower_startsale,.flower_nums{
+	width:392px;
+	height:40px;
+	/*background-color: red;*/
+	float:left;
+	/*margin-top:10px;*/
+	border: 1px solid silver;
+}
+/*设置表单的样式*/
+.flower_price input,.flower_startsale input{
+	border: 0;
+	width:35px;
+	height:20px;
+	font-size: 20px;
+	background-color:#F35901;
+}
+.flower_nums input{
+	border: 0;
+	width:54px;
+	height:20px;
+	font-size: 20px;
+	/*background-color:#F35901;*/
+}
+.flower_intro{
+	width:392px;
+	height:50px;
+	/*background-color: red;*/
+	float:left;
+	/*margin-top:10px;*/
+	border: 1px solid silver;
+}
+.flower_intro input{
+	width:80px;
+	height:26px;
+	/*background-color: red;*/
+}
+.flower_buy{
+	width:392px;
+	height:40px;
+	float:left;
+	/*margin-top:10px;*/
+	/*border: 1px solid silver;*/
+	margin-top:10px;
+}
+.flower_buy span{
+	margin-left: 40px;
+}
+/*显示花卉的附加信息*/
+.flower_attachinfo{
+	width:898px;
+	height:auto;
+	border:1px solid silver;
+	margin-top: 2px;
+	float: left;
+	background-color: white;
+}
+.info{
+	width:898px;
+	height:100px;
+	border: 1px solid silver;
+	font-size: 16px;
+}
+.info td{
+	width:200px;
+}
+.xiangxi{
+	width:898px;
+	height:40px;
+	background-color:#F2F2F2;
+	float: left;
+}
+.xiangxi span{
+	line-height: 40px;
+	font-size: 20px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	font-weight: bold;
+}
+/*显示用户评论*/
+.record{
+	width:898px;
+	height:auto;	//暂定为100px
+	border: 1px solid silver;
+}
+.record1{
+	width:898px;
+	height:100px;	
+	border: 1px solid silver;
+}
+.no_comment{
+	width:898px;
+	height:40px;
+	float: left;
+	/*background-color: pink;*/
+	margin-top: 10px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.user_comment{
+	width: 898px;
+	height:auto;
+	float:left;
+	border-bottom: 1px solid silver;
+	/*background-color: pink;*/
+}
+.neirong{
+	width: 898px;
+	height:auto;
+	float:left;
+	/*background-color: pink;*/
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left:2px;
+}
+.time_name{
+	width: 898px;
+	height:auto;
+	float:left;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-left: 680px;
+	margin-bottom: 5px;
+}
+.lianxi{
+	width:898px;
+	height:auto;	//暂定为100px
+	border: 1px solid silver;
+	float: left;
+}
+.lianxi span{
+	font-size: 18px;
+	margin-left:10px;
+	display: block;
+	background-color:white;
+}
+/*同类花卉*/
+.similar_flower{
+	width:290px;
+	height:280px;
+	float: left;
+	background-color: white;
+	/*border: 1px solid red;*/
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.similar_flower_pic{
+	width:290px;
+	height:230px;
+	float: left;
+	background-color: pink;
+}
+.similar_flower_pic img{
+	width:290px;
+	height:230px;
+	border: 0px;
+}
+.similar_flower table{
+	width:290px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+.no_similar_flower{
+	width:900px;
+	height: 30px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+}
+.similar_flower table a:link{
+	text-decoration: none;
+	color: black;	
+}
+.similar_flower table a:hover{
+	color:red;
+}
+
+/*显示花卉的详细介绍*/
+.flower_extrainfo{
+	width:898px;
+	height:auto;	//暂定为100px
+	border:1px solid silver;
+	float: left;
+	font-size: 18px;
+	background-color:#E4F0A4;
+}

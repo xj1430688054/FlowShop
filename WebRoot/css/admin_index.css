@@ -1,0 +1,746 @@
+/*用户主页最上边的的div*/
+.navi_head{
+	width:900px;
+	/*border:1px solid red;*/
+	margin:0 auto;
+	height:25px;
+	/*background-color:#F5F5F5;*/
+	background-color:#ededed;
+	line-height:25px;/*设置行高，让文字居中*/
+}
+.navi_head span{
+	margin-left:30px;
+	/*background-color:black;*/
+	/*color:blue;*/
+}
+
+/*超链接的样式*/
+.navi_head span a:link,.navi_pic a:link{	
+	color:black;
+	text-decoration: none;
+}
+/*鼠标悬停在超链接上时字体的变化*/
+.navi_head span a:HOVER,.navi_pic a:hover{
+	color:blue;
+}
+
+
+/*此处放功能板块，导航条*/
+.navi_content{
+	width:900px;
+	height:40px;
+	/*background-color:red;*/
+	background-color:#92E587;
+}
+.navi_content ul{
+	width:900px;
+	height:40px;
+}
+.navi_content ul li{  /*li 也是块元素*/
+	float:left;
+	list-style: none;
+	/*width:100px;*/
+	/*background-color: red;*/
+	line-height:40px;/*行高，垂直居中*/
+	text-align: center;/*水平居中*/
+	font-size: large;
+	height:40px;
+	padding:0 25px;
+	margin-left: 6px;
+	
+}
+/*下拉菜单的制作*/
+.navi_content ul li ul li{
+	float: none;
+}
+.navi_content ul li a{
+	color:black;
+	text-decoration: none;
+	/*background-color:#98D407;*/
+	display: block;/*将内联元素设置为块元素*/
+	height:40px;
+	float:left;	
+}
+
+.navi_content ul li a:hover{
+	color: white;
+	background-color:#24412B;
+}
+
+
+/*导航条的样式*/
+.menu{
+	width:900px;
+	height:40px;
+	background-color:#92E587;
+}
+.menu ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+}
+.menu ul li {
+float:left; 
+position:relative;
+}
+.menu ul li a, .menu ul li a:visited {
+display:block; 
+text-align:center; 
+text-decoration:none; 
+/*width:104px;*/ 
+height:40px; 
+color:black; 
+/*border:1px solid #fff;
+border-width:1px 1px 0 0;*/
+/*background:#c9c9a7;*/ 
+line-height:40px; 
+font-size:20px;
+padding:0 20px;
+margin-left: 10px;
+
+}
+/* make the dropdown ul invisible */
+.menu ul li ul {
+	display: none;
+}
+.menu ul li:hover a {
+color:#fff; 
+background:#b3ab79;
+}
+.menu ul li:hover ul {
+display:block; 
+position:absolute;
+}
+.menu ul li:hover ul li a {
+display:block; 
+background:#faeec7; 
+color:#000;
+}
+.menu ul li:hover ul li a:hover {
+background:#dfc184; 
+color:#000;
+}
+
+/*导航条的样式*/
+.menu1{
+	width:900px;
+	height:40px;
+	background-color:#92E587;
+}
+.menu1 ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+}
+.menu1 ul li {
+float:left; 
+position:relative;
+}
+.menu1 ul li a, .menu1 ul li a:visited {
+display:block; 
+text-align:center; 
+text-decoration:none; 
+/*width:104px;*/ 
+height:40px; 
+color:black; 
+/*border:1px solid #fff;
+border-width:1px 1px 0 0;*/
+/*background:#c9c9a7;*/ 
+line-height:40px; 
+font-size:20px;
+padding:0 20px;
+margin-left: 24px;
+
+}
+/* make the dropdown ul invisible */
+.menu1 ul li ul {
+	display: none;
+}
+.menu1 ul li:hover a {
+color:#fff; 
+background:#b3ab79;
+}
+.menu1 ul li:hover ul {
+display:block; 
+position:absolute;
+}
+.menu1 ul li:hover ul li a {
+display:block; 
+background:#faeec7; 
+color:#000;
+}
+.menu1 ul li:hover ul li a:hover {
+background:#dfc184; 
+color:#000;
+}
+
+
+.center_content{
+	width:900px;
+	height:450px;
+	background-color:#E8F2FE;
+	margin-top: 2px;
+}
+.center_info{
+	width:500px;
+	height:100px;
+	/*background-color: silver;*/
+	margin-left: 200px;
+	margin-top: 135px;
+	float: left;
+	font-size: x-large;
+	text-align: center;
+	line-height: 100px;
+}
+.welcome{
+	width:900px;
+	height:30px;
+	line-height: 30px;
+	font-size:16px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.welcome1{
+	width:898px;
+	height:30px;
+	line-height: 30px;
+	font-size:16px;
+	font-weight: bold;
+	background-color: white;
+	border: 1px solid silver;
+}
+.welcome1 span{
+	margin-left: 10px;
+}
+
+
+.update_AdminInfo{
+	width:600px;
+	height:350px;
+	/*background-color: white;*/
+	margin-left: 150px;
+}
+.adminInfo{
+	width:600px;
+	height:40px;
+	background-color: #92E587;
+	line-height: 40px;
+	font-size: 18px;
+}
+.adminInfo span{
+	margin-left: 40px;
+}
+.detail_admin_info{
+	width:500px;
+	height:200px;
+	/*border: 1px solid black;*/
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.detail_admin_info table{
+	width:500px;
+	height:auto;
+	/*background-color:white;*/
+	/*text-align: center;*/
+	margin-left: 0px;
+	/*margin-top:10px;*/
+	border: 1px solid black;
+	display: block;
+	float: left;
+	font-size: 20px;
+}
+.detail_admin_info input{
+	width:160px;
+	height:30px;
+	background-color:#FA7121;
+	border: 0px;
+	font-size: 16px;
+}
+.td_width1{
+	width:150px;
+	/*background-color: red;*/
+	text-align: right;
+}
+.title_info{
+	width:500px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+.updateNow1{
+    width:598px;
+	height:30px;
+	/*background-color: pink;*/
+	margin-top: 2px;
+	float: left;
+	margin-left: 20px;
+}
+.updateNow1 span{
+	/*display: block;*/
+	margin-left: 30px;
+	
+}
+.upd_pwd1{
+	float: left;
+}
+/*管理员列表*/
+.fenye_info{
+	width:700px;
+	height:400px;
+	/*background-color:white;*/
+	margin-left: 100px;
+	margin-top: 0px;
+	float: left;
+	/*font-size: x-large;*/
+	text-align: center;
+}
+
+.fenye_info table{
+	width:699px;
+	height: auto;
+	line-height: 40px;
+	/*font-size: 20px;*/
+	/*background-color:#92E587;*/
+	border: 1px solid black;
+	margin-top: 30px;
+	
+}
+.tr_css{
+	background-color:#92E587;
+	font-size: 18px;
+	font-weight: bold;
+}
+.tr_css1{
+	font-size:16px;
+	/*color:red;*/
+}
+.ye{
+	width:700px;
+	height: auto;
+	/*background-color: pink;*/
+	margin-top:10px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+.fenye_info table a:link,.ye a:link,.fenye_users table a:link{
+	text-decoration: none;
+}
+.fenye_users{
+	width:700px;
+	height:360px;
+	/*background-color:white;*/
+	margin-left: 100px;
+	margin-top: 0px;
+	float: left;
+	/*font-size: x-large;*/
+	text-align: center;
+}
+.fenye_users table{
+	width:699px;
+	height: auto;
+	line-height: 40px;
+	/*font-size: 20px;*/
+	/*background-color:#92E587;*/
+	border: 1px solid black;
+	margin-top:5px;	
+}
+.search_user{
+	width:700px;
+	height:30px;
+	/*background-color:pink;*/
+	font-size: 18px;
+}
+.search_user span{
+	margin-left: 300px;
+}
+.search_message{
+	width:898px;
+	height:30px;
+	border: 1px solid silver;
+	background-color: white;
+	float: left;
+}
+.search_message span{
+	margin-left: 500px;
+}
+.search_order{
+	width:700px;
+	height:30px;
+	/*background-color:pink;*/
+	font-size: 18px;
+	/*background-color: pink;*/
+}
+.search_order span{
+	
+}
+
+.show_allmessage{
+	width: 898px;
+	height:650px;
+	border: 1px solid silver;
+	background-color: white;
+	float: left;
+}
+.show_allmessage1{
+	width: 898px;
+	height:400px;
+	border: 1px solid silver;
+	background-color: white;
+	float: left;
+}
+.show_allmessage2{
+	width: 898px;
+	height:550px;;
+	border: 1px solid silver;
+	background-color: white;
+	float: left;
+}
+.show_allmessage3{
+	width: 898px;
+	height:auto;
+	border: 1px solid silver;
+	background-color: white;
+	float: left;
+}
+
+.no_message{
+	width: 898px;
+	height:300px;
+	float: left;
+}
+.no_message span{
+	display: block;
+	width: 898px;
+	height:40px;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 40px;
+	font-size: 18px;
+	color: red;
+}
+
+.show_messagetitle{
+	width: 898px;
+	height:40px;
+	border: 1px solid silver;
+	background-color: #E8F2FE;
+	float: left;
+}
+.show_messagetitle table{
+	width: 898px;
+	height:50px;
+}
+.show_messagetitle table td{
+	text-align:center;
+	width: 138px;
+	font-size: 20px;
+}
+
+.show_messagecontent{
+	width:898px;
+	height:40px;
+	/*background-color:#92E587;*/
+	background-color:white;
+	border: 1px solid silver;
+	float: left;
+	margin-top: 5px;
+}
+
+.nei_rong{
+	width:178px;
+	height: 40px;
+	float: left;
+	/*border-right: 1px solid silver;*/
+}
+.nei_rong span{
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	display: block;
+}
+
+.nei_rong1{
+	width:220px;
+	height: 40px;
+	float: left;
+	/*border-right: 1px solid silver;*/
+}
+.nei_rong1 span{
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	display: block;
+}
+
+.message_title{
+	width:898px;
+	height:40px;
+	float: left;
+}
+.message_con{
+	width:898px;
+	height:auto;
+	float: left;
+	background-color: white;
+	border: 1px solid silver;
+}
+.message_con span{
+	margin-left: 38px;
+	line-height: 40px;
+	font-size: 18px;
+	
+}
+
+.message_ye{
+	width:898px;
+	height:40px;
+	background-color: pink;
+	float: left;
+}
+.message_ye span{
+	width:898px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+}
+.message_ye a:link{
+	text-decoration: none;
+}
+.user_detail{
+	width:700px;
+	height: auto;
+	/*background-color: white;*/
+	/*margin-top: 20px;*/
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.user_detail table{
+	width:600px;
+	line-height:25px;
+	font-size:16px;
+	margin-left: 50px;
+	border: 1px solid black;
+}
+.td_width{
+	width:100px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.td_width2{
+	width:90px;
+	text-align:center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*返回上一页*/
+.admin_go_back{
+	width:700px;
+	height: 40px;
+	float: left;
+	/*background-color: pink;*/
+	margin-top: 5px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+.admin_go_back a:link{
+	text-decoration: none;
+	color: black;
+}
+.admin_go_back a:hover{
+	color:blue;
+}
+/*用户名不存在时的提示*/
+.no_result{
+	width:600px;
+	height:200px;
+	font-size:16px;
+	margin-left: 50px;
+	/*border: 1px solid black;*/
+	margin-top: 30px;
+}
+.no_result span{
+	/*background-color: pink;*/
+	margin-top: 80px;
+	display: block;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*显示花卉详细信息中存放花卉的div*/
+.admin_flower_pic{
+	width:400px;
+	height: 400px;
+	/*background-color:white;*/
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.admin_addflower{
+	width:380px;
+	height:450px;
+	/*background-color:white;*/
+	float: left;
+	margin-top: 20px;
+	margin-left: 18px;
+	margin-right: 20px;
+}
+.admin_addflower img{
+	width:310px;
+	heigth:310px;
+	margin-left: 35px;
+}
+.admin_addflower table{
+	margin-top: 10px;
+}
+
+.admin_flower_pic table{
+	margin-top: 30px;
+}
+.admin_flower_pic img{
+	margin-top: 5px;
+	margin-left: 50px;
+}
+.admin_flower_pic span{
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	/*#F35901;*/
+}
+.admin_flower_detail{
+	width:450px;
+	height:390px;
+	/*background-color: white;*/
+	float: left;
+	margin-top: 20px;
+}
+.admin_flower_detail table{
+	width:400px;
+	height:390px;
+	line-height: 30px;
+	font-size: 20px;
+	border: 1px solid black;
+}
+.admin_flower_ba{
+	width:900px;
+	height:auto;
+	background-color:#E8F2FE;
+}
+.admin_flower_back{
+	/*background-color:#E8F2FE;*/
+	/*background-color:white;*/
+	width:900px;
+	text-align: right;
+	display: block;
+}
+
+.admin_flower_back1{
+	/*background-color:#E8F2FE;*/
+	/*background-color:white;*/
+	width:900px;
+	text-align: right;
+	display: block;
+	margin-top:10px;
+}
+
+/*修改花卉信息*/
+.center_updflower{
+	width:900px;
+	height:530px;
+	background-color:#E8F2FE;
+	border: 1px solid black;
+}
+/*修改花卉信息的文本域的样式*/
+.updflower_css{
+	width:90px;
+	height:25px;
+	background-color: #F35901;
+	border: 0px;
+	font-size: 20px;
+}
+.updflower_intro{
+	width:300px;
+	height:25px;
+	background-color: #F35901;
+	border: 0px;
+	font-size: 20px;
+}
+.updnow_css{
+	width:110px;
+	height:30px;
+	background-color: #F35901;
+	border: 0px;
+	font-size: 20px;
+	margin-left: 15px;
+}
+/*管理员追加评论内容*/
+.admin_zhuijia{
+	width:898px;
+	height:40px;
+	float: left;
+	/*background-color: pink;*/
+	margin-top: 3px;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+.admin_comment{
+	width:400px;
+	height: 200px;
+	border: 1px solid silver;
+	float: left;
+	margin-left: 250px;
+	margin-top: 30px;
+}
+.admin_zhuijiatijiao{
+	width:898px;
+	height:40px;
+	float: left;
+	/*background-color: pink;*/
+	margin-top:10px;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	text-align: center;
+}
+/*添加花卉动态*/
+.add_news{
+	width:897px;
+	height:430px;
+	border:1px solid silver;
+	float:left;
+	background-color: #E8F2FE;
+}
+.user_info{
+	width:898px;
+	height:40px;
+    background-color:white;
+	margin-top: 0px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align:left;
+	border: 1px solid silver;
+	float: left;
+}
+
+.add_content{
+	width:604px;
+	height:300px;
+	border: 1px solid silver;
+	margin-left: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.add_content input{
+	width:598px;
+	height:198px;
+	border: 0px;
+	text-align: top;
+}

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.LoginClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.UserClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadFile</servlet-name>
+    <servlet-class>com.gcj.test.UploadFile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FormSubmit</servlet-name>
+    <servlet-class>com.gcj.test.FormSubmit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResultServlet</servlet-name>
+    <servlet-class>com.gcj.test.ResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowFlowerClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.ShowFlowerClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReserveClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.ReserveClServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateCode</servlet-name>
+    <servlet-class>com.gcj.utils.CreateCode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PutIntoCartClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.PutIntoCartClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowMyCartClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.ShowMyCartClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckNameServlet</servlet-name>
+    <servlet-class>com.gcj.controller.CheckNameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterNameCl</servlet-name>
+    <servlet-class>com.gcj.controller.RegisterNameCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.OrderClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReserveOkCl</servlet-name>
+    <servlet-class>com.gcj.controller.ReserveOkCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>goLoginView</servlet-name>
+    <servlet-class>com.gcj.controller.admin.goLoginView</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLoginCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminLoginCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminClServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminFenyeCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminFenyeCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminUserCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminUserCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminFlowerCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminFlowerCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateFlowerServlet</servlet-name>
+    <servlet-class>com.gcj.controller.admin.UpdateFlowerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RestoreFlowerCl</servlet-name>
+    <servlet-class>com.gcj.controller.RestoreFlowerCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminOrderCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminOrderCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserMessageCl</servlet-name>
+    <servlet-class>com.gcj.controller.UserMessageCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminMessageCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminMessageCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminCommentCl</servlet-name>
+    <servlet-class>com.gcj.controller.admin.AdminCommentCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowFlowerTrendsCl</servlet-name>
+    <servlet-class>com.gcj.controller.ShowFlowerTrendsCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowFlowerKnowledgeCl</servlet-name>
+    <servlet-class>com.gcj.controller.ShowFlowerKnowledgeCl</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ForumClServlet</servlet-name>
+    <servlet-class>com.gcj.controller.ForumClServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginClServlet</servlet-name>
+    <url-pattern>/LoginClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserClServlet</servlet-name>
+    <url-pattern>/UserClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadFile</servlet-name>
+    <url-pattern>/UploadFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FormSubmit</servlet-name>
+    <url-pattern>/FormSubmit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResultServlet</servlet-name>
+    <url-pattern>/ResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowFlowerClServlet</servlet-name>
+    <url-pattern>/ShowFlowerClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReserveClServlet</servlet-name>
+    <url-pattern>/ReserveClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateCode</servlet-name>
+    <url-pattern>/CreateCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PutIntoCartClServlet</servlet-name>
+    <url-pattern>/PutIntoCartClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowMyCartClServlet</servlet-name>
+    <url-pattern>/ShowMyCartClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckNameServlet</servlet-name>
+    <url-pattern>/CheckNameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterNameCl</servlet-name>
+    <url-pattern>/RegisterNameCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderClServlet</servlet-name>
+    <url-pattern>/OrderClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReserveOkCl</servlet-name>
+    <url-pattern>/ReserveOkCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>goLoginView</servlet-name>
+    <url-pattern>/goLoginView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginCl</servlet-name>
+    <url-pattern>/AdminLoginCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminClServlet</servlet-name>
+    <url-pattern>/AdminClServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminFenyeCl</servlet-name>
+    <url-pattern>/AdminFenyeCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminUserCl</servlet-name>
+    <url-pattern>/AdminUserCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminFlowerCl</servlet-name>
+    <url-pattern>/AdminFlowerCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateFlowerServlet</servlet-name>
+    <url-pattern>/UpdateFlowerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RestoreFlowerCl</servlet-name>
+    <url-pattern>/RestoreFlowerCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminOrderCl</servlet-name>
+    <url-pattern>/AdminOrderCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserMessageCl</servlet-name>
+    <url-pattern>/UserMessageCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminMessageCl</servlet-name>
+    <url-pattern>/AdminMessageCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminCommentCl</servlet-name>
+    <url-pattern>/AdminCommentCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowFlowerTrendsCl</servlet-name>
+    <url-pattern>/ShowFlowerTrendsCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowFlowerKnowledgeCl</servlet-name>
+    <url-pattern>/ShowFlowerKnowledgeCl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ForumClServlet</servlet-name>
+    <url-pattern>/ForumClServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

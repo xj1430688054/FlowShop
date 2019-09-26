@@ -1,0 +1,259 @@
+<%@ page language="java" import="java.util.*,com.gcj.domain.*,com.gcj.service.*,java.text.*" pageEncoding="utf-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+
+//获取当前时间
+SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//定义日期格式
+String nowTime = sdf.format(new java.util.Date()); 
+String time=nowTime.substring(0,11);//截取字符串
+
+//得到用户信息
+Users user=(Users)request.getSession().getAttribute("loginuser");
+//接收orderinfo
+//OrderInfo orderInfo =(OrderInfo)request.getAttribute("orderinfo");
+//接收al
+//ArrayList al = (ArrayList)request.getAttribute("al"); //存放的是orderItem实例
+//接收floweral
+//ArrayList floweral=(ArrayList)request.getAttribute("floweral");//存放的是预订的花卉的实例
+//需要orderInfo 和orderDetail实例
+//获取allOrderInfo
+//ArrayList allOrderInfo = (ArrayList)request.getAttribute("allorderinfo");
+ 
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml=transitional.dtd">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'ReserveOk.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	
+	<link rel="stylesheet" type="text/css" href="css/admin_index.css">
+	<link rel="stylesheet" type="text/css" href="css/user_index.css">
+	<link rel="stylesheet" type="text/css" href="css/comm.css">
+	
+	<script type="text/javascript">
+	function showDetail(orderid){	//用户点击"查看详情"时显示订单细节 难点:使用js 操作css
+		
+		window.open("/FlowerShop/OrderClServlet?type=showorderDetail&id="+orderid,"_self");
+	}
+	
+	
+	//一号线:创建ajax引擎
+	function getXmlHttpObject(){
+		
+			var xmlHttpRequest;
+			//不同的浏览器获取对象xmlhttprequest的方法不一样
+			if(window.ActiveXobject){
+				//如果是IE浏览器
+				xmlHttpRequust = new ActiveXobject("Microsoft.XMLHTTP");
+			}else{
+				//其他浏览器
+				xmlHttpRequest = new XMLHttpRequest();
+			}
+			return xmlHttpRequest;
+		}
+	
+	var myXmlHttpRequest="";//设置为全局变量
+	var xmlHttpRequest="";//设置为全局变量
+	//二号线:发送http请求
+	//使用Ajax异步修改订单
+	function updateOrder(orderid,reason){
+			//window.alert("进来了=======");
+			//首先创建一个XMLHttpRequest对象
+			myXmlHttpRequest = getXmlHttpObject();
+			if(myXmlHttpRequest){	//创建成功
+				//获取需要的表单数据
+				//alert("订单编号="+orderid +"退订原因="+reason);
+				//创建连接服务器的url
+				var url="/FlowerShop/OrderClServlet?type=cancelorder&mytime="+new Date();
+				var data="orderid="+orderid+"&reason="+reason+"&mytime="+new Date();
+				//打开请求
+				myXmlHttpRequest.open("post",url,true);
+				//使用post 提交下面这句话必须有,告之服务器正在发送数据，且数据已经符合URL编码了
+				myXmlHttpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				//指定回调函数 showResult1是函数名
+				myXmlHttpRequest.onreadystatechange=showResult1;
+				//发送请求，填入数据
+				myXmlHttpRequest.send(data);
+				
+			}else{//创建失败，给出提示
+				window.alert("myXmlHttpRequest 创建失败!");
+			}
+		
+	}
+	
+	function showResult1(){	//回调函数
+		if(myXmlHttpRequest.readyState==4){		//HTTP就绪码为4  
+				if(myXmlHttpRequest.status==200){	//HTTP 状态码为200 说明服务器处理正确
+					//取出值，根据返回信息的格式定
+					//alert("执行到这里了⑤");
+					window.alert(myXmlHttpRequest.responseText);
+					//跳转到ReserveOkCl控制器
+    				//window.location.href="/FlowerShop/ReserveOkCl?no="+orderid+"";
+    				window.location.reload(true);//刷新页面
+				}else if(myXmlHttpRequest.status==404){	//客户端请求出错
+						window.alert("请求的url不存在");
+				}else{
+					alert("Error:status code is:"+myXmlHttpRequest.status);
+				}
+			}
+	}
+	
+	
+	//取消订单的操作
+	function cancelOrder(orderid){
+		//window.alert("订单编号为"+orderid);
+		if(window.confirm("订单已生成，您真的要取消预订吗?")){
+			//alert("订单取消成功");
+			//window.prompt("感谢您的光临，请填写退订原因，以便我们为您更好地服务，谢谢!","退订原因");
+			//window.open("cancelreason.html","newwindow","height=200,width=400,top=200,left=550,toolbar=no,menuba=no,scrollbars=no,resizable=no,location=no,status=no");
+			var reason=prompt("感谢您的光临，请填写退订原因，以便我们为您更好地服务，谢谢!","");//prompt() 方法用于显示可提示用户进行输入的对话框。
+  			if(reason=="")
+    		{
+    			alert("请输入退订原因，谢谢");
+    			return false;
+    		}else if(reason==null){
+    				alert("您取消了该操作");
+    				return false;
+    		}else{
+    			//此处使用Ajax异步执行取消订单的实际操作
+    			//alert(reason);
+    			updateOrder(orderid,reason);
+    			//跳转到ReserveOkCl控制器
+    			//window.location.href="/FlowerShop/ReserveOkCl?no="+orderid+"";
+    			//window.open("/FlowerShop/ReserveOkCl?no="+orderid+"","_self");	
+    		}
+		}else{
+			alert("放弃取消订单");
+			return false;
+		}
+	}
+	
+	function getOrderDetail(orderid){		//查看订单详情
+		//alert("要查看的订单编号="+orderid);
+		//跳转到处理查看订单详情的控制器
+		window.open("/FlowerShop/OrderClServlet?type=goshoworderdetail&no="+orderid+"","_self");
+	}
+	
+	function gotopay(){	//模拟去付款 
+		alert("系统繁忙，请稍后再试!");
+	}
+	
+	function CheckLogin(user){
+		if(user==null){
+			window.alert("您还没有登录，请先登录!若您还没有账号，请先注册,谢谢!");
+			return false;
+		}else{
+			return true;
+		}
+	}
+	function CheckIndexLogout(user){	//验证用户是否已经登录
+		if(user==null){
+			window.alert("您还没有登录，请先登录!");
+			return false;
+		}else{
+			return true;
+		}
+	}
+	
+	</script>
+  </head>
+  
+  <body background="images/bg.bmp" >
+  
+  <div class="navi_head">
+   <%
+   		if(user !=null){
+   		%>
+   		<span>欢迎您, <font size="3"><%=user.getUsername() %></font></span>
+   		<% 
+   		}else{
+   		 %>
+   <span>您好, 请 <a href="/FlowerShop/LoginClServlet?type=gotoLoginView">登录</a> | <a href="/FlowerShop/UserClServlet?type=gotoregisterview">注册</a></span>
+   <% } %>
+   <span style="margin-left: 400px;">  <a href="/FlowerShop/UserClServlet?type=logout" onClick="return CheckIndexLogout(<%=user %>)">【安全退出】</a></span>
+   </div>
+   
+   <div class="navi_pic">
+   <img  onClick="return test1();"src="images/logo.gif"  height="150px" />
+  <!-- 如何防止首页的logo被盗 -->
+<table width="78%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="76%" align="center" ><font class="font1">花卉,让生活多姿多彩</font></td>
+    <td width="24%"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td bordercolor="#FFFFFF"><img src="images/account.gif" width="19" height="14" /><a href="/FlowerShop/UserClServlet?type=myaccount" onClick="return CheckIndexLogout(<%=user %>)">我的账户</a></td>
+      </tr>
+      <tr><td>&nbsp;</td></tr>
+      <tr>
+        <td bordercolor="#FFFFFF"><img src="images/cart.gif" width="20" height="15" /> <a href="/FlowerShop/ShowMyCartClServlet?type=myCart" onClick="return CheckIndexLogout(<%=user %>)">我的预订单</a></td>
+      </tr>
+       <tr><td>&nbsp;</td></tr>
+      <tr>
+        <td bordercolor="#FFFFFF"><img src="images/icon2.gif" width="20" height="20" />  <a href="/FlowerShop/OrderClServlet?type=myorder" onClick="return CheckIndexLogout(<%=user %>)">我的历史订单</a></td>
+      </tr>
+      <tr><td>&nbsp;</td></tr>
+       <tr>
+        <td bordercolor="#FFFFFF"><img src="images/icon2.gif" width="20" height="20" /> <a href="/FlowerShop/RestoreFlowerCl?type=goshowmyrestore" onClick="return CheckIndexLogout(<%=user %>)"> 我的收藏</a> </td>
+      </tr>
+       <tr><td>&nbsp;</td></tr>
+    </table></td>
+  </tr>
+</table>
+   
+   </div>
+   
+    <div class="menu1">
+   <ul>
+   <li>
+  <a href="/FlowerShop/index.jsp">首　页</a>
+   </li>
+   
+   <li><a href="/FlowerShop/index.jsp">供应花卉</a>
+  <ul>
+   <li><a href="/FlowerShop/ShowFlowerClServlet?type=bh">&nbsp;百　合&nbsp;&nbsp;</a></li>
+   <li><a href="/FlowerShop/ShowFlowerClServlet?type=rs">&nbsp;玫　瑰&nbsp;&nbsp;</a></li>
+   <li><a href="/FlowerShop/ShowFlowerClServlet?type=lh">&nbsp;兰　花&nbsp;&nbsp;</a></li>
+   <li><a href="/FlowerShop/ShowFlowerClServlet?type=fzj">&nbsp;非洲菊&nbsp;&nbsp;</a></li>
+   <li><a href="/FlowerShop/ShowFlowerClServlet?type=knx">&nbsp;康乃馨&nbsp;&nbsp;</a></li>
+   </ul>
+   </li>
+     <li><a href="/FlowerShop/ShowFlowerKnowledgeCl?type=showflowerknowledge">花卉知识</a></li>
+   <li><a href="/FlowerShop/ShowFlowerTrendsCl?type=showflowernews">花卉动态</a>
+   
+   </li>
+  <!-- <li><a href="/FlowerShop/ForumClServlet?type=showAllpost">论坛交流</a></li> -->
+ 
+ <li><a href="/FlowerShop/UserMessageCl?type=aftersearch" onClick="return CheckLogin(<%=user %>);">我要留言</a></li>
+   
+    <li><a href="/FlowerShop/UserClServlet?type=showcontact">联系方式</a></li>
+   </ul>
+   </div>
+   
+  	<div class="user_info">评价成功<span style="float: right;margin-right: 10px;"><a href="/FlowerShop/index.jsp" style="text-decoration: none;color:#92E587;">返回首页</a></span></div>
+  	
+    
+  	<div class="comment_ok"><span>感谢您的评价，返回 <a href="/FlowerShop/OrderClServlet?type=myorder" style="text-decoration: none">我的历史订单</a></span></div>
+ 
+  <!-- 尾部 -->
+   <div class="tail">
+   
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="abc">
+  <tr>
+    <td align="center" height="20px">&copy;</td>
+  </tr>
+  <tr>
+    <td align="center" height="20px">&copy;花卉预定管理系统</td>
+  </tr>
+</table>
+   </div>
+  </body>
+</html>

@@ -1,0 +1,1290 @@
+/*css提示快捷键的使用方法：Alt+.*/
+
+ul,li{		/*只要我们在页面中新写一个标签，就要进行重置*/
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin:0 auto;/*这句话表示边距清零，自动左右居中*/
+	padding:0;
+	font-size:13px;/*网页的字体大小*/
+	width:900px;
+	height:auto;
+}
+
+
+
+/*用户主页最上边的的div*/
+.navi_head{
+	width:900px;
+	/*border:1px solid red;*/
+	margin:0 auto;
+	height:25px;
+	/*background-color:#F5F5F5;*/
+	background-color:#ededed;
+	line-height:25px;/*设置行高，让文字居中*/
+}
+.navi_head span{
+	margin-left:30px;
+	/*background-color:black;*/
+	/*color:blue;*/
+}
+
+.span1{
+	float:right;
+	margin-right: 20px;
+}
+
+/*超链接的样式*/
+.navi_head span a:link,.navi_pic a:link{	
+	color:black;
+	text-decoration: none;
+}
+/*鼠标悬停在超链接上时字体的变化*/
+.navi_head span a:HOVER,.navi_pic a:hover{
+	color:blue;
+}
+/*导航栏的图片*/
+.navi_pic{
+	width:900px;
+	height:150px;
+	/*background-color:white;*/
+	margin-top:1px;
+	
+}
+.navi_reserve{
+	width:898px;
+	height:150px;
+	/*background-color:pink;*/
+	margin-top:1px;
+	border: 1px solid silver;
+	background-color:white;
+}
+
+.user_detailinfo{
+	width:898px;
+	height:auto;
+	background-color:white;
+	margin-top:1px;
+	float: left;
+	/*border: 1px solid silver;*/
+	
+}
+.check{
+	width:898px;
+	height:50px;
+	/*background-color: pink;*/
+	margin-top: 0px;
+	line-height: 50px;
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid silver;
+	color:#FE720C;
+}
+.check1{
+	width:898px;
+	height:40px;
+	background-color:white;
+	margin-top: 0px;
+	line-height: 40px;
+	font-size:20px;
+	border: 1px solid silver;
+}
+.user_info,.reservation_info{
+	width:898px;
+	height:40px;
+	/*background-color: pink;*/
+	margin-top: 0px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align:left;
+	border: 1px solid silver;
+	color:black;
+	font-weight: bold;
+	float: left;
+}
+/*送花地址*/
+.send_address{
+	width:898px;
+	height:40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align:left;
+	border: 1px solid silver;
+	color:red;
+	font-weight: bold;
+	float: left;
+	background-color: white;
+	
+}
+.send_address input{
+	width:500px;
+	height:30px;
+	background-color:#FA7121;
+	border: 0px;
+	font-size: 16px;
+	margin-left: 10px;
+}
+.send_address span{
+	font-size: 12px;
+	margin-left: 20px;
+}
+.detail_info,.updateUserInfo{
+	width:898px;
+	height:auto;
+	border: 1px solid silver;
+	float: left;
+	/*background-color: pink;*/
+}
+/*修改用户个人信息界面的input控件的样式*/
+.updateUserInfo input,.updateUserpwd input{
+	width:220px;
+	height:30px;
+	background-color:#FA7121;
+	border: 0px;
+	font-size: 16px;
+}
+.reda { color:red;}
+.a2 { width:100px; margin-left:5px; padding:2px; background:#ccc;}
+
+.error { background:#ccc url(../images/error.gif) no-repeat; padding-left:25px; padding-right:3px;}
+.righta { background:#ccc url(../images/righta.gif) no-repeat; padding-left:25px; padding-right:3px;}
+
+.updateUserInfo table,.updateUserpwd table{
+	width:600px;
+	height:auto;
+	background-color:white;
+	/*text-align: center;*/
+	margin-left: 0px;
+	margin-top:2px;
+	border: 1px solid silver;
+	display: block;
+	float: left;
+	font-size: 20px;
+}
+.updateNow{
+    width:598px;
+	height:30px;
+	/*background-color: pink;*/
+	margin-top: 2px;
+	float: left;
+	margin-left: 60px;
+}
+.updateNow span{
+	/*display: block;*/
+	margin-left: 30px;
+	
+}
+.upd_pwd{
+	float: left;
+}
+/*修改用户密码*/
+.updateUserpwd{
+	width:600px;
+	height: auto;
+	float: left;
+	border: 1px solid silver;
+}
+.detail_info table{
+	width:600px;
+	height:auto;
+	background-color:white;
+	/*text-align: center;*/
+	margin-left: 0px;
+	margin-top:2px;
+	border: 1px solid silver;
+	display: block;
+	float: left;
+	font-size: 20px;
+}
+
+/*关于积分优惠的政策*/
+.score_info{
+	width:290px;
+	height:300px;
+	border: 1px solid silver;
+	display: block;
+	float: right;
+	margin-top:2px;
+	background-color: white;
+}
+/*用户修改信息页面*/
+.score_info1{
+	width:294px;
+	height:300px;
+	border: 1px solid silver;
+	display: block;
+	float: right;
+	margin-top:2px;
+	background-color: white;
+}
+.td_width{
+	width:150px;
+	/*background-color: red;*/
+	text-align: center;
+}
+/*放预订的花卉的信息*/
+.flower_info{
+	width:898px;
+	height:auto;
+	background-color:#F2F6FF;
+	margin-top: 1px;
+	font-size: 20px;
+	/*border: 1px solid #F2F6FF;*/
+	float: left;
+}
+.flower_detail_info{
+	width:898px;
+	border: 1px solid #F2F6FF;
+}
+/*此处放用户留言，总价等信息*/
+.flower_other_info{
+	width:898px;
+	height:auto;
+	/*background-color:pink;*/
+	margin-top: 2px;
+	float: left;
+	/*border: 1px solid #F2F6FF;*/
+}
+.flower_other_info table{
+	width:898px;
+	height:100px;
+	border: 1px solid silver;
+	font-size: 18px;
+	background-color: white;
+}
+.total_price{
+	width:325px;
+	height:80px;
+	float: right;
+	border: 2px solid #FC8332;
+	margin-top: 2px;
+}
+.total_price_info{
+	width:898px;
+	height:80px;
+	float: left;
+	
+}
+.submit_order{
+	width:118px;
+	height: 34px;
+	float: right;
+	border: 0px;
+	float: right;
+	margin-top: 7px;
+}
+.go_back{
+	width:118px;
+	height: 34px;
+	float: right;
+	border: 0px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 5px;
+}
+/*showMyCart.jsp页面中显示订单*/
+.order_flower_info{
+	width:900px;
+	height：auto;
+	/*background-color:#F2F6FF;*/
+	background-color:white;
+	margin-top:6px;
+	font-size: 20px;
+	/*border: 1px solid #F2F6FF;*/
+	float: left;
+}
+/*空的大div，用于填充*/
+.big_nulldiv{
+	width:900px;
+	height:200px;
+	/*background-color:white;*/
+	margin-top: 2px;
+	float: left;
+}
+.order_flower_info table{
+	width:899px;
+	height：auto;
+	border: 1px solid silver;
+	margin-top:0px;
+	background-color: #E8F2FE;
+}
+.all_reserve_flower{
+	width:899px;
+	height：40px;;
+	line-height: 40px;
+	background-color: #FA7121;
+	margin-top: 4px;
+	font-size: 21px;
+	color:white;
+	font-weight: bold;
+	
+}
+/*预订花卉数量的文本域控件*/
+.order_flowernums{
+	width:70px;
+	height:25px;
+	background-color: #FA7121;
+	font-size: 20px;
+}
+.order_font{
+	color:#F35901;
+}
+/*清空购物车*/
+.clearCart{
+	width:220px;
+	height:34px;
+	float: left;
+	background-color: #E6E6E6;
+	margin-top: 6px;
+	font-size: 18px;
+	line-height: 34px;
+}
+.clearcart_img{
+	width:118px;
+	height:34px;
+	float:left;
+	margin-top: 6px;
+	margin-left: 2px;
+}
+.goto_pay{
+	width:118px;
+	height:34px;
+	float: right;
+	margin-top: 6px;
+}
+.goback_search{
+	width:118px;
+	height:34px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+.navi_pic img,.navi_reserve img{
+	margin-left:40px;
+	display: block;
+	float: left;
+}
+
+.font1{
+	font-size:xx-large;
+	
+}
+.cart_navi{
+	width:599px;
+	height:50px;
+	/*background-color:blue;*/
+	float: left;
+	margin-top:49px;
+	margin-left: 10px;
+}
+
+
+
+/*此处放功能板块，导航条*/
+.navi_content{
+	width:900px;
+	height:40px;
+	/*background-color:red;*/
+	background-color:#92E587;
+	
+	
+}
+.navi_content ul{
+	width:900px;
+	height:40px;
+}
+.navi_content ul li{  /*li 也是块元素*/
+	float:left;
+	list-style: none;
+	/*width:100px;*/
+	/*background-color: red;*/
+	line-height:40px;/*行高，垂直居中*/
+	text-align: center;/*水平居中*/
+	font-size: large;
+	height:40px;
+	padding:0 25px;
+	margin-left: 6px;
+	
+}
+.navi_content ul li a{
+	color:black;
+	text-decoration: none;
+	/*background-color:#98D407;*/
+	display: block;/*将内联元素设置为块元素*/
+	height:40px;
+	float:left;	
+}
+
+.navi_content ul li a:hover{
+	color: white;
+	background-color:#24412B;
+}
+
+
+/*内容板块*/
+.content_center{
+	width:900px;
+	height:auto;/*高度暂定为600px,实际中随着显示的内容的变化而变化*/
+	/*border:1px solid silver;*/
+	margin-top:1px;
+}
+/*左边的内容*/
+.content_left{
+	width:300px;
+	height:auto;/*高度暂定为600px,实际中随着显示的内容的变化而变化*/
+	/*background-color:gray;*/
+	float:left;/*左浮动*/
+}
+/*左上的广告栏*/
+.content_left_ad{
+	width:300px;
+	height:30px;
+	background-color:silver;
+	float:left;/*左浮动*/
+}
+.content_left_ad span{
+	line-height: 30px;
+	font-size:14px;
+	margin-left: 10px;
+}
+/*左上的flash文件*/
+.content_left_flash{
+	width:300px;
+	height:200px;
+	/*background-color: pink;*/
+	float: left;
+}
+/*快速信息检索*/
+.content_left_search{
+	width:300px;
+	height:40px;
+	background-color: yellow;
+	float: left;
+	margin-top: 2px;
+}
+.content_left_search span{
+	line-height: 40px;
+	font-size: 20px;
+	margin-left:10px;
+	color: black;
+}
+.content_left_form{
+	width:300px;
+	height:100px;
+	background-color:#E8F2FE;
+	float: left;
+	margin-top: 1px;
+}
+.content_left_form table{
+	/*background-color: red;*/
+	margin-left:20px;
+	margin-top:10px;
+}
+
+/*热门花卉排行*/
+.content_left_range{
+	width:300px;
+	height:40px;
+	background-color: yellow;
+	float: left;
+	margin-top:1px;
+}
+.content_left_range span{
+	line-height: 40px;
+	font-size: 20px;
+	margin-left:10px;
+	color: black;
+}
+/*热门花卉排行内容*/
+.content_left_flower{
+	width:300px;
+	height:150px;
+	background-color:#E8F2FE;
+	float: left;
+	margin-top:1px;
+}
+.content_left_flower table{
+	line-height: 18px;
+	margin-top: 4px;
+}
+
+
+/*用户留言*/
+.content_left_user{
+	width:300px;
+	height:40px;
+	/*background-color: yellow;*/
+	float: left;
+	margin-top:1px;
+}
+/*用户留言信息*/
+.content_left_message{
+	width:300px;
+	height:155px;
+	background-color:#E8F2FE;
+	float: left;
+	line-height:20px;
+	margin-top:1px;
+}
+.content_left_message ul{
+	padding-left:0px;
+	/*background-color: red;*/
+}
+.content_left_message li{
+	list-style-type:none;
+	margin-left:10px;
+	font-size: 12px;
+}
+/*超链接的样式*/
+.content_left_message a:link{	
+	color:blue;
+	text-decoration: none;
+	/*font-size: 12px;*/
+}
+/*鼠标悬停在超链接上时字体的变化*/
+.content_left_message a:HOVER{
+	color:red;
+}
+.message_time{
+	font-size: 12px;
+	display: block;
+	float: right;
+}
+
+
+/*联系我们*/
+.content_left_contact{
+	width:300px;
+	height:40px;
+	background-color: #ededed;
+	float: left;
+	margin-top: 1px;
+}
+/*.content_left_contact span img{
+	height:40px;
+	width:300px;
+	/*background-color: black;*/
+	/*margin-top:5px;
+	margin-left:10px;
+}*/
+/*.content_left_contact span{
+	/*font-size:x-large;*/
+	display: block;/*有时为了让span 能够响应margin,将其转换为块元素*/
+	/*background-color: black;
+	margin-top: 7px;
+	margin-left: 5px;
+}*/
+.content_left_contact span font{
+	font-size:large;
+	margin-left:10px;
+}
+
+/*联系我们的内容*/
+.content_left_contactinfo{
+	width:300px;
+	height:115px;
+	background-color: #E8F2FE;
+	float: left;
+	margin-top:1px;
+}
+.content_left_contactinfo span{
+	display: block;
+	margin-top:10px;
+	line-height: 18px;
+	margin-left: 20px;
+}
+
+
+/*右上部分*/
+.content_right_top{
+	width:598px;
+	height:30px;
+	background-color:#E4F0A4;
+	border-bottom:1px solid silver;
+	border-right:1px solid silver;
+	float:left;
+}
+.content_right_top span{
+	line-height: 30px;
+	font-size: 16px;
+	margin-left:10px;
+}
+/*右下部分*/
+.content_right_bottom{
+	width:600px;
+	height:880px;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	/*background-color:silver;*/
+	margin-top:1px;
+	float:right;
+}
+/*联系方式*/
+.show_contact_info{
+	width:595px;
+	height:880px;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	background-color:white;
+	margin-top:1px;
+	float:right;
+	margin-left:5px;
+}
+.show_company_info{
+	width:596px;
+	height:880px;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	background-color:white;
+	margin-top:1px;
+	float:right;
+	border: 1px solid silver;
+	margin-left: 2px;
+}
+.contact_user{
+	width:595px;
+	height:150px;
+	border-bottom: 1px dashed silver;
+}
+.contact_user table{
+	width:595px;
+	height:150px;
+	margin-left: 5px;
+}
+
+.contact_user_info{
+	width:595px;
+	height:200px;
+	/*background-color: pink;*/
+}
+
+.contact_user_info table{
+	width:595px;
+	height:200px;
+	margin-left: 5px;
+}
+
+.contact_map{
+	width:595px;
+	height:400px;
+	/*background-color: red;*/
+}
+
+.content_right_bottom_cont{
+	width: 300px;
+	height:210px;
+	float:left;
+	/*background-color:white;*/
+}
+/*不够显示的地方用此div代替*/
+.content_right_bottom_cont1{
+	width: 300px;
+	height:210px;
+	float:left;
+	/*background-color: red;*/
+	
+}
+
+.content_right_bottom_cont table{
+	/*border-style: dotted;*/
+	border:1px solid silver;
+	margin-left:1px;
+	font-size:12px;
+	width:300px;
+	height:210px;
+}
+
+.content_right_bottom_fenye{
+	width: 600px;
+	height:50px;
+	float:left;
+	/*background-color:white;*/
+}
+.content_right_bottom_fenye span{
+	display: block;
+	/*background-color: red;*/
+	line-height: 50px;
+	text-align: center;
+	/*margin-top: 15px;*/
+	font-size: 16px;
+}
+.content_right_bottom_fenye span a:link{
+	color:black;
+	text-decoration: none;
+}
+.content_right_bottom_fenye span a:hover{
+	color:blue;
+	text-decoration:underline;
+}
+
+
+/*尾部*/
+.tail{
+	width:900px;
+	height:50px;
+	background-color:#92E587;
+	margin-top:2px;
+	font-size:12px;
+	float: left;
+}
+.tail table{
+	font-size:14px;
+	margin-top: 6px;
+}
+/*订单提交成功，显示提交成功的界面*/
+.show_order_area{
+	width:898px;
+	height:auto;
+	/*border: 1px solid silver;*/
+	border-top:0px;
+	float: left;
+	margin-top: 1px;
+	background-color: white;
+}
+.order_title,.order_title1{
+	width:898px;
+	height:40px;
+	float: left;
+	text-align: left;
+	line-height:40px;
+	background-color:#F2F5F8;
+	color: black;
+	font-size: 20px;
+	/*border: 1px solid silver;*/
+}
+.order_title table,.order_title1 table{
+	width:898px;
+	height:40px;
+	text-align: center;
+}
+.order_title1 table td{
+	width:149px;
+}
+.orderdate{
+	width:898px;
+	height:40px;
+	float: left;
+	text-align: left;
+	line-height:40px;
+	background-color:#92E587;
+	color: black;
+	font-size: 20px;
+	margin-top: 2px;
+}
+.orderdate span{
+	margin-left: 30px;
+}
+/*订单详情左边的部分*/
+
+.order_left{
+	width:550px;
+	height:auto;
+	float: left;
+	background-color:white;
+	border: 1px solid silver;
+}
+.order_left_pic{
+	width:220px;
+	height:180px;
+	float: left;
+}
+.order_left_pic img{
+	width:220px;
+	height: 170px;
+	border: 0px;
+	margin-top: 5px;
+}
+.order_left_flower{
+	width:324px;
+	height: 180px;
+	float: left;
+	background-color:white;
+	float: left;
+	margin-left: 5px;
+}
+.order_left_flower table{
+	height:180px;
+	width:324px;
+	text-align: center;
+	font-size: 16px;
+}
+.order_right{
+	width:345px;
+	height: 180px;
+	/*background-color: pink;*/
+	float: left;
+}
+.order_right_one{
+	width:114px;
+	height: 180px;
+	float:left;
+	/*background-color: red;*/
+	border-right:1px solid silver;
+	border-bottom:1px solid silver;
+	text-align: center;
+}
+.order_right_two{
+	width:114px;
+	height:180px;
+	float:left;
+	/*background-color: red;*/
+	border-right:1px solid silver;
+	/*border-bottom:1px solid silver;*/
+	text-align: center;
+}
+.order_right_three{
+	width:345px;
+	height:180px;
+	float:left;
+	border-right: 1px solid silver;
+	border-bottom:1px solid silver;
+}
+.ping_lun{
+	width:898px;
+	height:40px;
+	float: left;
+	text-align: center;
+	line-height:40px;
+	background-color:#F2F5F8;
+	color: black;
+	font-size: 24px;
+	margin-top: 5px;
+}
+.order_right_one span,.order_right_two span{
+	display: block;
+	margin-top: 82px;
+	font-size: 16px;
+}
+/*.show_order_area table{
+	width:898px;
+	height:auto;
+	//border-collapse:separate;
+	margin-top: 3px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #E8F2FE;
+}*/
+.show_order_area input{
+		width:80px;
+		height:24px;
+		background-color:#F35901;
+		border: 0px;
+		font-size: 16px;
+}
+/*订单处理成功的提示*/
+.ok_message{
+	width:898px;
+	height:30px;
+	float: left;
+	text-align: left;
+	line-height:30px;
+	margin-top:10px;
+	background-color:#92E587;
+	color: black;
+	font-size: 14px;
+	/*visibility:visible;可见的*/
+}
+
+/*显示订单的详细信息*/
+.show_order_info1{
+	width:896px;
+	height:200px;
+	float:left;
+	background-color: white;
+	margin-top:2px;
+	border: 1px solid silver;
+}
+.show_order_info1 span{
+	width:896px;
+	/*height:60px;*/
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: red;
+	margin-top: 80px;
+}
+.show_order_info2{
+	width:896px;
+	height:200px;
+	float:left;
+	background-color:#F2F5F8;
+	margin-top:2px;
+	border: 1px solid silver;
+}
+/*显示收藏花卉的div*/
+.show_restore,.user_message{
+	width:898px;
+	height:auto;
+	border: 1px solid silver;
+	float: left;
+	background-color: white;
+}
+.restore_flower{
+	width:447px;
+	height:auto;
+	float: left;
+	background-color: white;
+	/*border: 1px solid red;*/
+}
+.restore_flower_fenye{
+	width:900px;
+	height:30px;
+	background-color:#E8F2FE;
+	float: left;
+}
+.restore_flower_fenye span{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+}
+.restore_flower_fenye span a:link,.restore_intro a:link{
+	text-decoration: none;
+	color: black;
+}
+.restore_flower_fenye span a:hover,.restore_intro a:hover{
+	color: red;
+}
+.restore_flower_pic{
+	width:310px;
+	height:310px;
+	/*background-color: pink;*/
+	margin-left: 60px;
+	margin-top: 5px;
+	float: left;
+}
+.restore_flower_pic img{
+	width:310px;
+	height:310px;
+}
+.restore_intro{
+	width:310px;
+	margin-left: 60px;
+	margin-top: 5px;
+	/*background-color: blue;*/
+	float: left;
+}
+
+.restore_intro table{
+	width:310px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: center;
+	
+} 
+.cancelorder{
+	width:400px;
+	height:200px;
+	background-color: pink;
+}
+/*订单详细信息*/
+.xiangxi_order{
+	width:898px;
+	height:auto;
+	border: 1px solid silver;
+	float: left;
+}
+.xiangxi_order table{
+	width:900px;
+	line-height: 30px;
+	font-size: 20px;
+	background-color: #92E587; 
+}
+.all_order{
+	width:898px;
+	height:auto;
+	border: 1px solid silver;
+}
+.single_orderinfo{
+	width:147px;
+	height:80;
+	float: left;
+	border: 1px solid silver;
+	background-color:#F2F5F8;
+}
+.single_orderinfo span{
+	display: block;
+	height:80px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+/*没有满足条件的花卉*/
+.nokeyword_flower{
+	width:898px;
+	height:200px;
+	border:1px solid silver;
+	float:left;
+	background-color: white;
+}
+.nokeyword_flower span{
+	display: block;
+	width:898px;
+	height:50px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 80px;
+}
+.nokeyword_flower a:link{
+	text-decoration: none;
+}
+.nokeyword_flower a:HOVER {
+	text-decoration:underline;
+	color:red;
+}
+.message_info{
+	width:897px;
+	height:auto;
+	border:1px solid silver;
+	float:left;
+	background-color: white;
+}
+.message_title{
+	width:897px;
+	height:40px;
+	background-color: #E8F2FE;
+	
+}
+.message_title span,.message_content1 span{
+	display: block;
+	line-height: 40px;
+	margin-left:40px;
+	font-size: 18px;
+}
+.message_title input{
+	width:400px;
+	height: 30px;
+	border: 0px;
+	font-size:16px;
+	margin-left: 5px;
+}
+.message_content{
+	width:600px;
+	height:200px;
+	border: 1px solid silver;
+	margin-left: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.message_content input{
+	width:598px;
+	height:198px;
+	border: 0px;
+	text-align: top;
+}
+.message_content1{
+	width:898px;
+	height:40px;
+	background-color:#92E587;
+}
+.tijiao{
+	width:898px;
+	height: 40px;
+	/*border: 1px solid red;*/
+}
+.tijiao span{
+	display: block;
+	line-height: 40px;
+	text-align: center;
+}
+.tijiao_input{
+	width:60px;
+	height:30px;
+	font-size:16px;
+}
+/*用户点击了某条留言后*/
+.show_message_info{
+	width:898px;
+	height:auto;
+	border: 1px solid silver;
+	background-color: white;
+	float:left;
+}
+.now_location,.other_message{
+	width:900px;
+	height:40px;
+	border-bottom: 1px solid silver;
+	background-color: #E8F2FE;
+}
+.now_location span,.other_message span{
+	line-height: 40px;
+	font-size:18px;
+	margin-left:20px;
+}
+.select_message{
+	width:900px;
+	height:auto;
+	border-bottom: 1px solid silver;
+}
+.show_message_title{
+	width:900px;
+	height:30px;
+	border-bottom: 1px solid silver;
+}
+.show_message_title span{
+	line-height: 30px;
+	font-size:16px;
+	margin-left:100px;
+}
+.show_message_content{
+	width:900px;
+	height: auto;
+	border-bottom: 1px solid silver;
+	line-height: 30px;
+	font-size: 18px;
+	color:#F35901;
+}
+/*评价成功*/
+.comment_ok{
+	width:898px;
+	border:1px solid silver;
+	height:400px;
+	background-color: #E8F2FE;
+	float: left;
+	
+}
+.comment_ok span{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	/*background-color:red;*/
+	width:898px;
+	margin-top: 100px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*没有收藏过花卉*/
+.no_store_flower{
+	width:898px;
+	height: 300px;
+	border: 1px solid silver;
+	background-color: white;
+}
+.no_store_flower_tishi{
+	width:898px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 80px;
+}
+/*付款功能*/
+.gotopay{
+	width:900px;
+	height: 30px;
+	line-height: 30px;
+	/*background-color: pink;*/
+	font-size: 20px;
+	border-bottom: 1px solid silver;
+}
+
+/*显示花卉动态*/
+.show_flower_trends{
+	width:596px;
+	height:884px;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	background-color:#E4F0A4;
+	margin-top:1px;
+	float:right;
+	border: 1px solid silver;
+	margin-left: 2px;
+}
+.show_trends{
+	width:596px;
+	height:auto;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	background-color:white;
+}
+.show_trends table{
+	width:596px;
+	height: auto;
+	/*margin-top: 30px;*/
+}
+.show_trends table td{
+	line-height: 30px;
+	font-size: 16px;
+}
+.show_trends table td a:link{
+	text-decoration: none;
+	color: black;
+}
+.show_trends table td a:hover{
+	text-decoration: underline;
+	color:red;
+}
+/*暂无动态*/
+.no_trends{
+	width:596px;
+	height:100px;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	background-color:white;
+}
+.no_trends span{
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 40px;
+}
+.show_flower_trends_info{
+	width:596px;
+	height:884px;/*高度暂定为860px,实际中随着显示的内容的变化而变化*/
+	background-color:#E8F2FE;
+	margin-top:1px;
+	float:right;
+	border: 1px solid silver;
+	margin-left: 2px;
+}
+.trend_info_title{
+	width:596px;
+	height: 30px;
+	margin-top: 30px;
+	/*background-color: white;*/
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+}
+.trend_info_time{
+	width:596px;
+	height:30px;
+	/*background-color: pink;*/
+	line-height: 30px;
+	font-size: 16px;
+}
+.trend_info_time span{
+	margin-left: 100px;
+}
+.trend_info_cont{
+	width:596px;
+	height: auto;
+	/*background-color: red;*/
+	text-align: center;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.trend_info_before{
+	width:578px;
+	height:40px;
+	font-size:18px;
+	margin-top: 50px;
+	margin-left: 20px;
+	/*background-color: red;*/
+	line-height: 40px;
+}
+.trend_info_next{
+	width:596px;
+	height:40px;
+	font-size:18px;
+	margin-top: 0px;
+	margin-left: 20px;
+	line-height: 40px;
+}
+.trend_info_back{
+	width:596px;
+	height:40px;
+	font-size:18px;
+	margin-top: 0px;
+	line-height: 40px;
+	text-align: center;
+}
+.trend_info_before a:link,.trend_info_next a:link{
+	text-decoration: none;
+	color: black;
+}
+.trend_info_before a:hover,.trend_info_next a:hover{
+	text-decoration: none;
+	color: red;
+}

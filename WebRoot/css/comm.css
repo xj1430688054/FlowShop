@@ -1,0 +1,9 @@
+/*把通用的样式写到该文件*/
+/*css提示快捷键的使用方法：Alt+.*/
+body{
+	margin:0 auto;/*这句话表示边距清零，自动左右居中*/
+	padding:0;
+	/*font-size:12px;/*网页的字体大小*/
+	width:900px;
+	height:auto;
+}
